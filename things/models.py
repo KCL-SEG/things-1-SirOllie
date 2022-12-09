@@ -15,5 +15,5 @@ class Thing(models.Model):
             return value
 
     name = models.CharField("name", unique=True, max_length=30, blank=False)
-    description = models.TextField("description", max_length=120)
-    quantity = models.IntegerField("quantity", max_length=3, blank=False, validators=[validate_quantity])
+    description = models.CharField("description", max_length=120, blank=True)
+    quantity = models.IntegerField("quantity", blank=False, validators=[validate_quantity])
