@@ -1,1 +1,1 @@
-from models import Thing
+from .models import Thing
